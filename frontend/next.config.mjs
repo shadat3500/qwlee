@@ -1,3 +1,7 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 /** @type {import('next').NextConfig} */
 
 // Build the image allowlist from env so dev/staging/prod stay consistent.

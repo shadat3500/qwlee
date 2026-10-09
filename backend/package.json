@@ -1,10 +1,10 @@
 {
   "name": "qwlee-api",
   "version": "1.0.0",
-  "description": "Qwlee — backend API for the Qwlee freelance marketplace",
+  "description": "Qwlee \u2014 backend API for the Qwlee freelance marketplace",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "node init && nodemon src/index.js",
     "seed": "node seeders/index.js",
     "seed:reset": "node seeders/index.js --reset --reset-only",
     "seed:users": "node seeders/index.js --only=users",
@@ -50,5 +50,9 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
+  },
+  "overrides": {
+    "debug@>=4.0.0 <4.3.1": "^4.3.1",
+    "on-headers@>=1.0.0 <1.1.0": "^1.1.0"
   }
 }
